@@ -1,0 +1,410 @@
+﻿section#FormLogin,#commandesOrder,#FormRegister
+{
+	margin: auto;
+	text-align: center;
+	width: 40%;
+	color: #000000;
+	border:6px ridge black;
+}
+
+section#commandesOrder 
+{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.button
+{
+	height: 40px;
+	font-size: large;
+}
+
+section#commandesOrder input, section#commandesOrder select
+{
+	height: 40px;
+	font-size: large;
+}
+
+#registerNotifications, #loginNotifications, #warning
+{
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: large;
+	width: 100%;
+	text-align: center;
+	color: #DE001E;
+	font-weight: bold;
+	background: #000000;
+}
+
+button#Envoi,#Annuler{
+	width: 100px;
+}
+
+button#suivant{
+	display: block;
+	margin: auto;
+	width: 150px;
+	height: 25px;
+} 
+
+p#connect{
+	text-align:right;
+}
+p#holdMdp,#newMdp,#newMdp2,#holdEmail,#newEmail,#newEmail2,#nom,#prenom,#login,#oldLogin,#newLogin,#newLogin2, #setalarme{
+	text-align:center;
+}
+
+span.spaced
+{
+	display: inline-block;
+	width: 300px;
+	text-align:left;
+}
+
+button#recommander,#histoCommande,#choixPaiement,#suivant,#Annuler1 {
+	display:block;
+	margin:auto;
+	width:20%;
+}
+
+table#recap,#historique{
+	background-color: white;
+	width: 80%;
+}
+
+table#sanddisp{
+	background-color: white;
+	width: 80%;
+}
+
+h1 {
+ border-bottom:2px dashed black;
+}
+
+h2 {
+	border-bottom:2px dashed black;
+	font-size: 4.3vw;
+}
+
+h3 {
+  text-align:center;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;   
+}
+
+h4 {
+  text-align:center;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase; 
+}
+
+menu#paiement {
+	margin:auto;
+}
+
+ul {
+	padding:0px;
+	margin:0px;
+	align: center;
+	text-align: center;
+}
+menu#menuDeb, menu#menuGestCompte {
+	padding:0px;
+	font-size:center;
+}
+
+ol {counter-reset: li} /* on initialise et nomme un compteur */
+
+ul#menuChoix li ,ul#menuCompte li {
+	list-style-type: none;
+	counter-increment:li; /* on incrémente le compteur à chaque nouveau li */
+	margin-bottom: 10px;
+	width:30%;
+	margin: auto;
+}
+ul#menuChoix li:before,ul#menuCompte li:before {
+	/* content: counter(li); /* on affiche le compteur */
+	padding: 15px 0px 15px 0px;
+	background: #000102;
+	border-radius: 40px;
+	font-weight: bold;
+	font-size: 1.0em;
+	color: grey;	
+	background-color:#DCDCDC;
+	line-height:20px;
+}
+	
+ul#menuChoix li,ul#menuCompte li {
+	/*  content: counter(li); /* on affiche le compteur */
+	padding: 15px 0px 15px 0px;
+	background: #000102;
+	border-radius: 40px;
+	font-weight: bold;
+	font-size: 1.0em;
+	color: grey;	
+	margin: auto;
+	margin-bottom:12px;
+	background-color:#DCDCDC;
+	line-height:20px;
+}
+
+
+img#logo {
+	display:block;
+	height: 150px;
+	width: 150px;
+	position: fixed;
+	bottom:10px; 
+	right:10px;
+}
+
+p#copyright {
+	text-align: left;
+	color: lightgrey;
+	position: fixed;
+	bottom:5px; 
+	left:20px;
+}
+
+
+fieldset {
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+div#listeChoix
+{
+	width: 50%;
+	margin: auto;
+	padding-left: 30%;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*Teal*/
+body {
+	/* background: linear-gradient(to bottom right,#E21E25, white); */
+	/*background: #FFFFFF;*/
+	background: #DE001E;
+	margin:0;
+	padding:0;
+	width:100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+input[type='checkbox'] {
+	display: inline-block;
+}
+
+table
+{
+	margin: auto;
+	border:6px outset black;
+	border-collapse:collapse;
+}
+
+td,th
+{
+    border: 1px solid black;
+}
+
+select{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-style: italic; 
+	font-weight: normal; 
+	text-transform: uppercase; 
+	color: black; 
+	text-decoration: none; 
+	background-color: white; 
+	border:2px inset black;
+	width:60%
+}
+
+select#alarme{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-style: italic; 
+	font-weight: normal; 
+	text-transform: uppercase; 
+	color: black; 
+	text-decoration: none; 
+	background-color: white; 
+	border:2px inset black;
+	width:200px;
+} 
+
+section#formLogin,#commandesOrder
+{
+	display: block;
+	background: #cccccc;
+}
+
+section#formRegister
+{
+	display: none;
+	background: #ccccff;
+}
+
+section#formMdp_mail{
+	display: inline;
+	background: #ccccff;
+	text-align:center;
+}
+
+button#showLoginForm, button#showRegisterForm
+{
+	margin-top: 25px;
+	width: 70%;
+	height: 35px;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+}
+
+section input[type='text'], section input[type='password']
+{
+	width: 60%;
+	height: 25px;
+	text-align: center;
+	
+}
+
+/*
+
+ .tags { 
+    margin:auto; 
+    right:24px; 
+    list-style:none; 
+} 
+
+.tags #menuPaiement li, .tags a { 
+	height:30px; 
+    line-height:30px; 
+    position:relative; 
+    font-size:20px; 
+}
+
+ .tags a { 
+    margin-left:20px; 
+    background:#0089e0; 
+    color:#fff; 
+    text-decoration:none; 
+    -moz-border-radius-bottomright:4px; 
+    -webkit-border-bottom-right-radius:4px; 
+    border-bottom-right-radius:4px; 
+    -moz-border-radius-topright:4px; 
+    -webkit-border-top-right-radius:4px; 
+    border-top-right-radius:4px; 
+}
+
+.tags a:before { 
+    content:""; 
+    float:left; 
+    position:absolute; 
+    top:0; 
+    left:-12px; 
+    width:0; 
+    height:0; 
+    border-color:transparent #0089e0 transparent transparent; 
+    border-style:solid; 
+    border-width:12px 12px 12px 0; 
+}
+
+.tags a:after { 
+    content:""; 
+    position:absolute; 
+    top:10px; 
+    left:0; 
+    float:left; 
+    width:4px; 
+    height:4px; 
+    -moz-border-radius:2px; 
+    -webkit-border-radius:2px; 
+    border-radius:2px; 
+    background:#fff; 
+    -moz-box-shadow:-1px -1px 2px #004977; 
+    -webkit-box-shadow:-1px -1px 2px #004977; 
+    box-shadow:-1px -1px 2px #004977; 
+}
+
+.tags a:hover { background:#555; } 
+.tags a:hover:before { border-color:transparent #555 transparent transparent; }
+
+*/
+
+@media all and (max-width: 1080px)
+{
+	section#formLogin, section#formRegister
+	{
+		width: 98%;
+		
+	}
+	
+	section input[type='text'], section input[type='password']
+	{
+		width: 98%;
+	}
+	
+	section#formMdp_mail{
+		width:100%;
+	}
+	
+	section#commandesOrder{
+		width: 98%;
+	}
+	
+	ul#menuChoix li, ul#menuCompte li{
+		width: 89%;
+	}
+	
+	text{
+		width:100%;
+	}
+	
+	h3{
+		width:100%;
+	}
+	
+	h4{
+		width:100%;
+	}
+	
+	mdpmail{
+		width:100%;
+	}
+	
+	table#recap,#historique{
+		width: 98%;
+	}
+	
+	p#holdMdp,#newMdp,#newMdp2,#holdEmail,#newEmail,#newEmail2,#nom,#prenom,#login,#oldLogin,#newLogin,#newLogin2,#nouvMdp,#nouvMdp2,#nouvEmail,#nouvEmail2{
+		width:100%;
+	}
+	
+	p#copyright {
+		display: none;
+	}
+	
+	img#logo {
+		display:none;
+	}
+	
+	button#recommander,#histoCommande,#choixPaiement,#suivant,#Annuler1 {
+		width:80%;
+		height: 50px;
+		font-size: larger;
+	}
+	
+
+}
